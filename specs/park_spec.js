@@ -83,11 +83,14 @@ describe('Park',function(){
     assert.strictEqual(2.12,park.spinosPerYear())
   })
 
-  it("should show an individual species' growth per year", function(){
-    park.addDromaeo(velociraptor)
+  it('should be able to calculate dinosaur growth per year', function(){
+    park.addDromaeo(deinonychus)
     park.addDromaeo(utahraptor)
+    park.addDromaeo(velociraptor)
+    park.addDromaeo(bambiraptor)
+    park.addSpino(spinosaurus)
 
-    assert.strictEqual(35,park.growthForSpecies("Velociraptor"))
+    assert.strictEqual(109,park.annualGrowth())
   })
 
 })

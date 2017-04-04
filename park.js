@@ -62,10 +62,21 @@ Park.prototype = {
     }
     
     return fecundDinos
-  
-  }
 
-  
+  },
+
+  annualGrowth: function(){
+    var eggsPerYear = 0
+
+    for (var i = 0; i < this.dromaeoEnclosure.length; i++){
+        eggsPerYear = eggsPerYear + this.dromaeoEnclosure[i].r
+      }
+    
+    for (var i = 0; i < this.spinoEnclosure.length; i++){
+        eggsPerYear = eggsPerYear + this.spinoEnclosure[i].r
+      }
+    return Math.floor(eggsPerYear)
+  }
 
 }
 
