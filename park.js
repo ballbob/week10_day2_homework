@@ -76,6 +76,10 @@ Park.prototype = {
         eggsPerYear = eggsPerYear + this.spinoEnclosure[i].r
       }
     return Math.floor(eggsPerYear)
+  },
+
+  dinosBy: function(years){
+    return this.annualGrowth() * years;
   }
 
 }

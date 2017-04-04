@@ -93,4 +93,15 @@ describe('Park',function(){
     assert.strictEqual(109,park.annualGrowth())
   })
 
+  it('should be able to show how many dinosaurs have been born in 4 years', function(){
+
+    park.addDromaeo(deinonychus)
+    park.addDromaeo(utahraptor)
+    park.addDromaeo(velociraptor)
+    park.addDromaeo(bambiraptor)
+    park.addSpino(spinosaurus)
+
+    assert.strictEqual(436,park.dinosBy(4))
+  })
+
 })
