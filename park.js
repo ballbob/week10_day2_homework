@@ -15,6 +15,10 @@ Park.prototype = {
   addSpino: function(spino){
     this.spinoEnclosure.push(spino)
   },
+
+  clearSpino: function(){
+    this.spinoEnclosure.length = 0
+  }
 }
 
 module.exports = Park
