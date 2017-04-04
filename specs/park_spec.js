@@ -54,5 +54,16 @@ describe('Park',function(){
     assert.strictEqual(undefined,park.spinoEnclosure[0])
   })
 
+  it('should show dinos with r over 25',function(){
+    park.addSpino(spinosaurus)
+
+    park.addDromaeo(deinonychus)
+    park.addDromaeo(utahraptor)
+    park.addDromaeo(velociraptor)
+    park.addDromaeo(bambiraptor)
+
+    assert.strictEqual([velociraptor,bambiraptor],park.growthRateOver(25))
+
+  })
 
 })
