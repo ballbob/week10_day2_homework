@@ -5,7 +5,7 @@ describe('Dinosaur', function(){
   var deinonychus
 
   beforeEach(function(){
-    deinonychus = new Dinosaur("Deinonychus",12)
+    deinonychus = new Dinosaur("Deinonychus",12,"Dromaeosaur")
   })
 
   it('should have a name',function(){
