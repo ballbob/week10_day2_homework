@@ -63,7 +63,7 @@ describe('Park',function(){
     park.addDromaeo(velociraptor)
     park.addDromaeo(bambiraptor)
 
-    assert.strictEqual(['Velociraptor','Bambiraptor'],park.growthRateOver(25))
+    assert.deepEqual(['Velociraptor','Bambiraptor'],park.growthRateOver(25))
   })
 
 })

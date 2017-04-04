@@ -27,19 +27,19 @@ Park.prototype = {
 
   //Park-wide functions
   growthRateOver: function(rate){
-    var fecundDinos = new Object()
+    var fecundDinos = []
     
-    for (var i; i < this.dromaeoEnclosure.length; i++){
+    for (var i = 0; i < this.dromaeoEnclosure.length; i++){
       if(this.dromaeoEnclosure[i].r > rate){
         var name = this.dromaeoEnclosure[i].name
-        fecundDinos.unshift(name)
+        fecundDinos.push(name)
       }
     }
     
-    for (var i; i < this.spinoEnclosure.length; i++){
+    for (var i = 0; i < this.spinoEnclosure.length; i++){
       if (this.spinoEnclosure[i].r > rate){
         var name = this.spinoEnclosure[i].name
-        fecundDinos.unshift(name)
+        fecundDinos.push(name)
       }
     }
     
