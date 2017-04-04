@@ -26,7 +26,7 @@ describe('Park',function(){
   })
 
   it('should be able to add a dromaeo', function(){
-    park.add(bambiraptor)
+    park.addDromaeo(bambiraptor)
     assert.strictEqual("Bambiraptor",park.dromaeoEnclosure[0].name)
   })
 })

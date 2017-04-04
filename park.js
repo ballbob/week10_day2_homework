@@ -3,4 +3,10 @@ var Park = function(){
   this.spinoEnclosure = new Array()
 }
 
+Park.prototype = {
+  addDromaeo: function(dromaeo){
+    this.dromaeoEnclosure.push(dromaeo)
+  }
+}
+
 module.exports = Park
