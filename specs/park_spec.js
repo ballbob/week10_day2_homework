@@ -21,7 +21,7 @@ describe('Park',function(){
   })
 
   it('should start empty', function(){
-    assert.strictEqual(0,park.dromaeoEnclosure())
-    assrt.strictEqual(0,park.spinoEnclosure())
+    assert.strictEqual(undefined,park.dromaeoEnclosure[0])
+    assert.strictEqual(undefined,park.spinoEnclosure[0])
   })
 })
