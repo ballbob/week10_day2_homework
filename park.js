@@ -18,6 +18,10 @@ Park.prototype = {
 
   clearSpino: function(){
     this.spinoEnclosure.length = 0
+  },
+
+  growthRateOver: function(){
+    
   }
 }
 
