@@ -11,9 +11,17 @@ describe('Park',function(){
 
   beforeEach(function(){
     park = new Park()
-    deinonychus = new Dinosaur("Deinonychus",12)
-    utahraptor = new Dinosaur("Utahraptor", 20)
-    velociraptor = new Dinosaur("Velociraptor",35)
-    bambiraptor = new Dinosaur("Bambiraptor",40)
+    
+    deinonychus = new Dinosaur("Deinonychus",12,"Dromaeosaur")
+    utahraptor = new Dinosaur("Utahraptor", 20,"Dromaeosaur")
+    velociraptor = new Dinosaur("Velociraptor",35,"Dromaeosaur")
+    bambiraptor = new Dinosaur("Bambiraptor",40,"Dromaeosaur")
+
+    spinosaurus = new Dinosaur("Spinosaurus",2.12,"Spinosaurid")
+  })
+
+  it('should start empty', function(){
+    assert.strictEqual(0,park.dromaeoEnclosure())
+    assrt.strictEqual(0,park.spinoEnclosure())
   })
 })
