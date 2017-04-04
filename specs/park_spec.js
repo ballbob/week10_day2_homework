@@ -44,6 +44,15 @@ describe('Park',function(){
     park.clearDromaeo()
 
     assert.strictEqual(undefined,park.dromaeoEnclosure[0])
-
   })
+
+  it('should be able to let the spinos out, too', function(){
+    park.addSpino(spinosaurus)
+
+    park.clearSpino()
+
+    assert.strictEqual(undefined,park.spinoEnclosure[0])
+  })
+
+
 })
