@@ -77,4 +77,10 @@ describe('Park',function(){
 
   })
 
+  it('should be able to show how many spinos per year', function(){
+    park.add(spinosaurus)
+
+    assert.strictEqual(2.12)
+  })
+
 })
