@@ -11,4 +11,8 @@ describe('Dinosaur', function(){
   it('should have a name',function(){
     assert.strictEqual("Deinonychus",deinonychus.name)
   })
+
+  it('should have growth rate',function(){
+    assert.strictEqual(12,deinonychus.r)
+  })
 })
