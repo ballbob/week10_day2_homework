@@ -8,9 +8,13 @@ Park.prototype = {
     this.dromaeoEnclosure.push(dromaeo)
   },
 
+  clearDromaeo: function(){
+    this.dromaeoEnclosure.length = 0
+  },
+
   addSpino: function(spino){
     this.spinoEnclosure.push(spino)
-  }
+  },
 }
 
 module.exports = Park

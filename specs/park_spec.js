@@ -35,7 +35,7 @@ describe('Park',function(){
     assert.strictEqual("Spinosaurus",park.spinoEnclosure[0].name)
   })
 
-  it('should be able to clear the dromaeo enclosure', function(){
+  it('should be able to let the dromaeos out, like in every single film, for some reason', function(){
     park.addDromaeo(deinonychus)
     park.addDromaeo(utahraptor)
     park.addDromaeo(velociraptor)
