@@ -32,6 +32,16 @@ Park.prototype = {
     this.spinoEnclosure.length = 0
   },
 
+  spinosPerYear: function(){
+    var eggsPerYear = 0
+
+    for (var i = 0; i < this.spinoEnclosure.length; i++){
+      eggsPerYear = eggsPerYear + this.spinoEnclosure[0].r 
+    }
+
+    return eggsPerYear
+  },
+
 
   //Park-wide functions
   growthRateOver: function(rate){
@@ -51,7 +61,7 @@ Park.prototype = {
       }
     }
     
-    return "The dinos with growth rates over", rate, "are", fecundDinos
+    return fecundDinos
   
   }
 
