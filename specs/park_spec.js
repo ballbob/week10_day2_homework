@@ -66,4 +66,15 @@ describe('Park',function(){
     assert.deepEqual(['Velociraptor','Bambiraptor'],park.growthRateOver(25))
   })
 
+  it('should be able to show how many dromaeos per year',function(){
+    
+    park.addDromaeo(deinonychus)
+    park.addDromaeo(utahraptor)
+    park.addDromaeo(velociraptor)
+    park.addDromaeo(bambiraptor)
+
+    assert.strictEqual(107,park.dromaeosPerYear())
+
+  })
+
 })
