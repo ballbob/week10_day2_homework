@@ -24,4 +24,9 @@ describe('Park',function(){
     assert.strictEqual(undefined,park.dromaeoEnclosure[0])
     assert.strictEqual(undefined,park.spinoEnclosure[0])
   })
+
+  it('should be able to add a dromaeo', function(){
+    park.add(bambiraptor)
+    assert.strictEqual("Bambiraptor",park.dromaeoEnclosure[0].name)
+  })
 })
