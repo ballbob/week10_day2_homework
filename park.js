@@ -6,6 +6,10 @@ var Park = function(){
 Park.prototype = {
   addDromaeo: function(dromaeo){
     this.dromaeoEnclosure.push(dromaeo)
+  },
+
+  addSpino: function(spino){
+    this.spinoEnclosure.push(spino)
   }
 }
 
