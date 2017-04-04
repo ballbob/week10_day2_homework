@@ -34,4 +34,16 @@ describe('Park',function(){
     park.addSpino(spinosaurus)
     assert.strictEqual("Spinosaurus",park.spinoEnclosure[0].name)
   })
+
+  it('should be able to clear the dromaeo enclosure', function(){
+    park.addDromaeo(deinonychus)
+    park.addDromaeo(utahraptor)
+    park.addDromaeo(velociraptor)
+    park.addDromaeo(bambiraptor)
+    
+    park.clearDromaeo()
+
+    assert.strictEqual(undefined,park.dromaeoEnclosure[0])
+
+  })
 })
