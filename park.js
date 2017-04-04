@@ -14,6 +14,14 @@ Park.prototype = {
     this.dromaeoEnclosure.length = 0
   },
 
+  dromaeosPerYear: function(){
+    var eggsPerYear = 0
+    for (var i = 0; i < this.dromaeoEnclosure.length; i++){
+      eggsPerYear = eggsPerYear + this.dromaeoEnclosure[i].r 
+    }
+    return eggsPerYear
+  },
+
 
   //Spinosaur enclosure functions
   addSpino: function(spino){
