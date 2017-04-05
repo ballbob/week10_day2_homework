@@ -79,7 +79,7 @@ Park.prototype = {
   },
 
   dinosBy: function(years){
-    return this.annualGrowth() * years;
+    return Math.pow(this.annualGrowth(), years);
   }
 
 }

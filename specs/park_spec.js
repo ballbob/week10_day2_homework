@@ -101,7 +101,7 @@ describe('Park',function(){
     park.addDromaeo(bambiraptor)
     park.addSpino(spinosaurus)
 
-    assert.strictEqual(436,park.dinosBy(4))
+    assert.strictEqual(141158161,park.dinosBy(4))
   })
 
 })
